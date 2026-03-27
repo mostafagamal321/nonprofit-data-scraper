@@ -82,7 +82,7 @@ def test_ein_normalisation():
     for raw, expected in cases:
         normalised = raw.replace("-", "").strip().zfill(9)
         ok = normalised == expected
-        print(f"  {'✓ PASS' if ok else '✗ FAIL'}  {raw!r:15s} → {normalised!r}  (expected {expected!r})")
+        print(f"  {'PASS' if ok else 'FAIL'}  {raw!r:15s} → {normalised!r}  (expected {expected!r})")
         if ok:
             passed += 1
     print(f"\nResults: {passed}/{len(cases)} passed")
@@ -92,8 +92,8 @@ if __name__ == "__main__":
     ok1 = test_xml_field_extraction()
     ok2 = test_ein_normalisation()
     if ok1 and ok2:
-        print("\n✅  All tests passed — pipeline logic is working correctly.")
+        print("\n All tests passed — pipeline logic is working correctly.")
         sys.exit(0)
     else:
-        print("\n❌  Some tests failed.")
+        print("\n  Some tests failed.")
         sys.exit(1)
