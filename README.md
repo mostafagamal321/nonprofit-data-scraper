@@ -50,27 +50,6 @@ python irs_propublica_pipeline.py --regions 1 --limit 50 --output test_output.xl
   --delay 0.5 \
   --output enriched_nonprofits.xlsx
 ```
-Flag,Default,Description
---regions,1 2 3 4,IRS regions to include
---limit,None (all),Only process first N EINs (for testing)
---output,enriched_nonprofits.xlsx,Output Excel filename
---delay,0.5,Seconds between API calls (politeness)
-#  Output Columns Added
-Column,XML Source Tag,Description
-_PP_FOUND,(API flag),Yes/No — was EIN found on ProPublica?
-_PP_TAX_YEAR,(API metadata),Most recent filing tax year
-_PP_XML_URL,(API metadata),S3 URL of the XML parsed
-total_revenue,CYTotalRevenueAmt,Current year total revenue
-contributions_grants,CYContributionsGrantsAmt,Contributions & grants
-membership_dues,MembershipDuesAmt,Membership dues
-government_grants,GovernmentGrantsAmt,Government grants
-noncash_contributions,NoncashContributionsAmt,Non-cash contributions
-total_volunteers,TotalVolunteersCnt,Total volunteer count
-program_service_revenue,CYProgramServiceRevenueAmt,Program service revenue
-investment_income,CYInvestmentIncomeAmt,Investment income
-other_revenue,CYOtherRevenueAmt,Other revenue
-total_expenses,CYTotalExpensesAmt,Total expenses
-net_assets,CYNetAssetsOrFundBalancesAmt,Net assets / fund balances
 # Running Tests (offline)
 ```bash
 python test_pipeline.py
