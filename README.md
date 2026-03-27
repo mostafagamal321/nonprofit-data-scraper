@@ -5,7 +5,7 @@ This tool automates the heavy lifting of nonprofit data research. It bridges the
 ---
 
 ## Project Overview / Demo Script
-[![Watch the Demo](https://www.youtube.com/watch?v=go54ghYSZC4)
+[![Watch the Demo](https://img.youtube.com/vi/go54ghYSZC4/0.jpg)](https://www.youtube.com/watch?v=go54ghYSZC4)
 
 
 **The Workflow:**
