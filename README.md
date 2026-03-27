@@ -1,4 +1,4 @@
-# IRS + ProPublica Nonprofit Enrichment Pipeline
+#  WEB SCRAPING IRS-ProPublica Nonprofit 
 
 This tool automates the heavy lifting of nonprofit data research. It bridges the gap between the **IRS Business Master File (BMF)**—which tells you who exists—and **ProPublica’s Nonprofit Explorer**, which tells you how they are performing financially.
 
